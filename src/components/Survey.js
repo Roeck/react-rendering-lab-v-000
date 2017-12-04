@@ -25,16 +25,17 @@ class Survey extends React.Component {
 
   maintainRating = () => this.forceUpdate();
 
+
   render() {
     return (
       <div>
-        <Rating rating={this.state.rating} />
-        <button onClick={this.increaseRating}>Loved it!</button>
-        <button onClick={this.maintainRating}>Indifferent!</button>
-        <button onClick={this.decreaseRating}>Hated it!</button>
+      <Rating rating={this.state.rating} />
+      <button onClick={this.increaseRating}>Loved it!</button>
+      <button onClick={this.maintainRating}>Indifferent!</button>
+      <button onClick={this.decreaseRating}>Hated it!</button>
       </div>
-    )
+      )
+    }
   }
-}
 
-export default Survey;
+  export default Survey;
